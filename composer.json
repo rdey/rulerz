@@ -1,21 +1,9 @@
 {
-    "name": "kphoen/rulerz",
+    "name": "redeye/rulerz",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/K-Phoen/RulerZ",
     "description": "Powerful implementation of the Specification pattern",
     "keywords": ["specification", "doctrine"],
-    "authors": [
-        {
-            "name": "Kévin Gomez",
-            "email": "contact@kevingomez.fr"
-        }
-    ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
-    },
     "autoload": {
         "psr-4": { "RulerZ\\": "src/" }
     },
@@ -28,41 +16,26 @@
             "spec\\RulerZ\\": "tests/spec/RulerZ/"
         }
     },
-    "config": {
-        "bin-dir": "bin/"
-    },
     "require": {
         "php": ">=7.1",
         "hoa/ruler": "~2.0",
         "symfony/property-access": "~3.0|~4.0"
     },
     "require-dev": {
-        "vlucas/phpdotenv": "~2.1",
-
+        "behat/behat": "~3.0",
+        "coduo/phpspec-data-provider-extension": "~1.0,!=1.0.2",
         "doctrine/orm": "~2.4",
         "elasticsearch/elasticsearch": "~1.0",
-        "ruflin/elastica": "~1.0",
+        "illuminate/database": "~5.0",
+        "kphoen/rusty": "dev-master",
+        "liip/rmt": "^1.2",
+        "mikey179/vfsstream": "~1.4",
+        "phpspec/phpspec": "~2.0,>=2.4@dev",
+        "pomm-project/cli": "~2.0@dev",
         "pomm-project/foundation": "~2.0@dev",
         "pomm-project/model-manager": "~2.0.@dev",
-        "pomm-project/cli": "~2.0@dev",
-        "illuminate/database": "~5.0",
+        "ruflin/elastica": "~1.0",
         "solarium/solarium": "~3.0",
-
-        "mikey179/vfsStream": "~1.4",
-        "coduo/phpspec-data-provider-extension": "~1.0,!=1.0.2",
-        "phpspec/phpspec": "~2.0,>=2.4@dev",
-
-        "behat/behat": "~3.0",
-
-        "kphoen/rusty": "dev-master",
-
-        "liip/rmt": "^1.2"
-    },
-    "suggest": {
-        "kphoen/rulerz-spec-builder": "If you want a specification builder",
-        "doctrine/orm": "To execute rules as Doctrine queries",
-        "elasticsearch/elasticsearch": "To execute rules as Elasticsearch queries",
-        "pomm-project/model-manager": "To execute rules as Pomm queries",
-        "solarium/solarium": "To execute rules as Solr queries"
+        "vlucas/phpdotenv": "~2.1"
     }
 }
