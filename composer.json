@@ -18,7 +18,7 @@
     },
     "require": {
         "php": ">=7.1",
-        "redeye/hoa-stream": "^1.0",
+        "redeye/hoa-stream": "^1.0.1",
         "hoa/ruler": "~2.0",
         "symfony/property-access": "^4.4|^5.0"
     },
